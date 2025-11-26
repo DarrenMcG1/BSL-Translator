@@ -25,7 +25,7 @@ const videoEl = ref<HTMLVideoElement | null>(null);
 const overlayEl = ref<HTMLCanvasElement | null>(null);
 const isActive = ref(false);
 const mediapipe = useMediaPipe();
-const { setPoseResult } = useTranslationStore();
+const translationStore = useTranslationStore();
 
 const toggleCamera = async () => {
   if (isActive.value) {
@@ -35,7 +35,10 @@ const toggleCamera = async () => {
   }
 
   if (videoEl.value && overlayEl.value) {
-    await mediapipe.start(videoEl.value, overlayEl.value, (result) => setPoseResult(result));
+    await mediapipe.start(videoEl.value, overlayEl.value, (result) => {
+      translationStore.setPoseResult(result);
+      translationStore.classifyPose();
+    });
     isActive.value = true;
   }
 };
