@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hello",
+    "gloss": "HELLO",
+    "englishMeanings": ["hello", "hi"],
+    "category": "greeting",
+    "handshape": "B_HAND",
+    "location": "neutral_space",
+    "movement": "single_outward",
+    "nfm": {
+      "mouthPattern": "hello",
+      "eyebrows": "neutral",
+      "headMovement": "nod",
+      "eyeGaze": "forward"
+    },
+    "animationData": { "duration": 600, "frames": [] }
+  },
+  {
+    "id": "thank-you",
+    "gloss": "THANK-YOU",
+    "englishMeanings": ["thank you", "thanks", "cheers"],
+    "category": "greeting",
+    "handshape": "FLAT_B",
+    "location": "chin",
+    "movement": "forward_double",
+    "nfm": {
+      "mouthPattern": "thank you",
+      "eyebrows": "neutral",
+      "headMovement": "nod",
+      "eyeGaze": "forward"
+    },
+    "animationData": { "duration": 800, "frames": [] }
+  }
+]
