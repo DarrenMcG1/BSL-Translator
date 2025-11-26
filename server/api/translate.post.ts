@@ -1,5 +1,5 @@
 import { defineEventHandler, readBody } from 'h3';
-import { useOllama } from '#imports';
+import { useOllama } from '~/composables/useOllama';
 
 export default defineEventHandler(async (event) => {
   const { text } = await readBody<{ text: string }>(event);
