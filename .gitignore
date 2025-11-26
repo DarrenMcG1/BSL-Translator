@@ -1,0 +1,8 @@
+node_modules
+.nuxt
+.output
+.cache
+.idea
+.DS_Store
+yarn.lock
+pnpm-lock.yaml
