@@ -22,5 +22,7 @@
 </template>
 
 <script setup lang="ts">
+import { storeToRefs } from 'pinia';
+
 const { mixer } = storeToRefs(useAvatar());
 </script>
