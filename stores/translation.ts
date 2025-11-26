@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import type { PoseResult } from '~/composables/useMediaPipe';
-import { useOllama } from '#imports';
+import { useOllama } from '~/composables/useOllama';
 import { useSignDatabase } from '#imports';
 
 export const useTranslationStore = defineStore('translation', () => {
